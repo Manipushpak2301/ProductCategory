@@ -23,7 +23,7 @@ namespace Products.Repository
         {
             connection();
             List<ProductModel> ProdList = new List<ProductModel>();
-            SqlCommand com = new SqlCommand("Select P.ProductId, P.ProductName, C.CategoryId, C.CategoryName from SampleDB.dbo.Product P join SampleDB.dbo.Category C on C.CategoryId = P.CategoryId;", con);
+            SqlCommand com = new SqlCommand("Select P.ProductId, P.ProductName, C.CategoryId, C.CategoryName from SampleDB.dbo.Product P join SampleDB.dbo.Category C on C.CategoryId = P.CategoryId order by ProductId ;", con);
             com.CommandType = CommandType.Text;
             SqlDataAdapter da = new SqlDataAdapter(com);
             DataTable dt = new DataTable();

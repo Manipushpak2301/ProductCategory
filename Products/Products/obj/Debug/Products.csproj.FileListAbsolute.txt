@@ -48,6 +48,12 @@ D:\ASP.Net Projects\Products\Products\bin\Microsoft.Owin.Security.OAuth.xml
 D:\ASP.Net Projects\Products\Products\bin\Microsoft.Owin.Security.Google.xml
 D:\ASP.Net Projects\Products\Products\bin\Microsoft.Owin.Security.Twitter.xml
 D:\ASP.Net Projects\Products\Products\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\ASP.Net Projects\Products\Products\obj\Debug\Products.csprojResolveAssemblyReference.cache
 D:\ASP.Net Projects\Products\Products\obj\Debug\Products.dll
 D:\ASP.Net Projects\Products\Products\obj\Debug\Products.pdb
+D:\ASP.Net Projects\Products\Products\obj\Debug\Products.csprojAssemblyReference.cache
+D:\ASP.Net Projects\Products\Products\obj\Debug\Products.csproj.CoreCompileInputs.cache
+D:\ASP.Net Projects\Products\Products\obj\Debug\Products.csproj.CopyComplete
+D:\ASP.Net Projects\Products\Products\bin\PagedList.dll
+D:\ASP.Net Projects\Products\Products\bin\PagedList.Mvc.dll
+D:\ASP.Net Projects\Products\Products\bin\PagedList.xml
+D:\ASP.Net Projects\Products\Products\bin\PagedList.Mvc.xml

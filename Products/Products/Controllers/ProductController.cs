@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using Products.Repository;
 using Products.Models;
-using PagedList.Mvc;
 using PagedList;
 
 namespace Products.Controllers
@@ -14,11 +13,21 @@ namespace Products.Controllers
     {
         //
         // GET: /Product/
-        public ActionResult IndexProd(int ? i)
+        public ActionResult IndexProd(int? page)
         {
+            int pageSize = 10;
+            int pageIndex = 1;
+            pageIndex = page.HasValue ? Convert.ToInt32(page) : 1;
+            IPagedList<ProductModel> pd = null;
+            ProductModel pdm = new ProductModel();
+            List<ProductModel> pdmList = new List<ProductModel>();
+            
             ProductRepository prod = new ProductRepository();
+            pdmList = prod.GetAllProducts();
+            
+            pd = pdmList.ToPagedList(pageIndex, pageSize);
             ModelState.Clear();
-            return View(prod.GetAllProducts() .ToPagedList(i??1,10));
+            return View(pd);
         }
 
         public ActionResult Create()
